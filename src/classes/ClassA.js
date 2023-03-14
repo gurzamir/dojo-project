@@ -33,13 +33,13 @@ export default function ClassA() {
       return alert("already register");
     }
   };
-  const removeKid = function (kid) {
-    console.log(kid);
-  };
+  //   const removeKid = function (kid) {
+  //     console.log(kid);
 
   return (
     <div>
-      <h1>first grade class</h1>
+      <h1>katzir-center</h1>
+      <h2>first grade class</h2>
       <h2>attendance</h2>
       {classFirstgradeArray.map((kid, index) => (
         <div>
@@ -51,16 +51,19 @@ export default function ClassA() {
             <label for="attending">present</label>
             <input id="attending" type={"checkbox"}></input>
           </span>
+          {/* <button id={index} onClick={removeKid}>
+            remove
+          </button> */}
         </div>
       ))}
       <div>
         <h4>add new register</h4>
       </div>
-      <label for="lastName">insert last name</label>
+      <label htmlFor="lastName">insert last name</label>
       <input ref={lastNameRef} id="lastName" type={"text"} />
-      <label for="firstName">insert first name</label>{" "}
+      <label htmlFor="firstName">insert first name</label>{" "}
       <input ref={firstNameRef} id="firstName" type={"text"} />
-      <label for="phoneNumber">insert parent's phone number</label>
+      <label htmlFor="phoneNumber">insert parent's phone number</label>
       <input ref={phoneRef} id="phoneNumber" type={"number"} />
       <button onClick={addNewKid}>submit</button>
     </div>
