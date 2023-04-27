@@ -18,7 +18,7 @@ function App() {
         </ul>
       </nav>
       <Routes>
-        <Route path="/katzir" element={<Katzir />} />
+        <Route path="/katzir/*" element={<Katzir />} />
         <Route path="/neotshoshanim" element={<NeotShoshanim />} />
       </Routes>
     </div>
